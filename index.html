@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Hayato Calculator</title>
+
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Equipment</h2>
+			<table class="table table-bordered" style="text-align: center">
+				<tr>
+					<td>
+						<a id="equipment-ring1" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Ring 1
+							<div id="equipment-ring1-tooltip"></div>
+						</a>
+					</td>
+					<td></td>
+					<td>
+						<a id="equipment-hat" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Hat
+							<div id="equipment-hat-tooltip"></div>
+						</a>
+					</td>
+					<td></td>
+					<td>
+						<a id="equipment-emblem" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Emblem
+							<div id="equipment-emblem-tooltip"></div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a id="equipment-ring2" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Ring 2
+							<div id="equipment-ring2-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-pendant1" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Pendant 1
+							<div id="equipment-pendant1-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-face" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Face
+							<div id="equipment-face-tooltip"></div>
+						</a>
+					</td>
+					<td></td>
+					<td>
+						<a id="equipment-badge" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Badge
+							<div id="equipment-badge-tooltip"></div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a id="equipment-ring3" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Ring 3
+							<div id="equipment-ring3-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-pendant2" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Pendant 2
+							<div id="equipment-pendant2-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-eye" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Eye
+							<div id="equipment-eye-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-earrings" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Earrings
+							<div id="equipment-earrings-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-medal" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Medal
+							<div id="equipment-medal-tooltip"></div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a id="equipment-ring4" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Ring 4
+							<div id="equipment-ring4-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-weapon" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Weapon
+							<div id="equipment-weapon-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-top" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Top
+							<div id="equipment-top-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-shoulder" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Shoulder
+							<div id="equipment-shoulder-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-secondary" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Secondary
+							<div id="equipment-secondary-tooltip"></div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a id="equipment-pocket" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Pocket
+							<div id="equipment-pocket-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-belt" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Belt
+							<div id="equipment-belt-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-bottom" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Bottom
+							<div id="equipment-bottom-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-gloves" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Gloves
+							<div id="equipment-gloves-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-cape" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Cape
+							<div id="equipment-cape-tooltip"></div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>
+						<a id="equipment-shoes" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Shoes
+							<div id="equipment-shoes-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-android" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Android
+							<div id="equipment-android-tooltip"></div>
+						</a>
+					</td>
+					<td>
+						<a id="equipment-heart" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Heart
+							<div id="equipment-heart-tooltip"></div>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="container">
+			<div class="btn-group">
+				<h2 class="right-padding">Equipment Selection</h2>
+				<div class="dropdown">
+					<button id="equipment-select-type" class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+						Type
+					</button>
+					<ul class="dropdown-menu scrollable">
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('weapon')">Weapon</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('secondary')">Secondary</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('emblem')">Emblem</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('hat')">Hat</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('top')">Top</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('bottom')">Bottom</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('gloves')">Gloves</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('shoes')">Shoes</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('shoulder')">Shoulder</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('cape')">Cape</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('belt')">Belt</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('ring1')">Ring 1</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('ring2')">Ring 2</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('ring3')">Ring 3</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('ring4')">Ring 4</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('pendant1')">Pendant 1</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('pendant2')">Pendant 2</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('face')">Face</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('eye')">Eye</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('earrings')">Earrings</a></li>
+						<li><a class="dropdown-item" href="javascript:void(0)" onclick="setEquipmentType('badge')">Badge</a></li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div id="equipment-select" class="btn-group invisible">
+				<div class="dropdown">
+					<span id="equipment-select-text" class="right-padding">Type</span>
+					<button id="equipment-select-item" class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+						Item
+					</button>
+					<ul class="dropdown-menu">
+					</ul>
+				</div>
+				<input id="equipment-select-stars" class="invisible" type="text" placeholder="Stars" oninput="setEquipmentStars('weapon', this.value)">
+				<div id="equipment-select-potential" class="dropdown invisible">
+					<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+						Potential
+					</button>
+					<ul class="dropdown-menu">
+						<div class="autocomplete">
+							<li>
+								<input id="equipment-select-potential-first" type="text" placeholder="First Line">
+							</li>
+						</div>
+						<div class="autocomplete">
+							<li>
+								<input id="equipment-select-potential-second" type="text" placeholder="Second Line">
+							</li>
+						</div>
+						<div class="autocomplete">
+							<li>
+								<input id="equipment-select-potential-third" type="text" placeholder="Third Line">
+							</li>
+						</div>
+					</ul>
+				</div>
+				<div id="equipment-select-error" class="error-text invisible">
+					Error!
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="container" style="display: none">
+			<h2>Other</h2>
+			<p>
+				Links<br>
+				Legion<br>
+				Familiars
+			</p>
+		</div>
+		<div class="container" style="display: none">
+			<h2>Total Stats</h2>
+			<div class="row">
+				<div class="col">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Stat</th>
+								<th scope="col">Value</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						<!--
+						<a id="equipment-weapon" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+							Weapon
+							<div id="equipment-weapon-tooltip"></div>
+						</a> -->
+
+							<tr>
+								<td>ATT</td>
+								<td>
+									<a id="total-att" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-att-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>ATT %</td>
+								<td>
+									<a id="total-att%" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-att%-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>STR</td>
+								<td>
+									<a id="total-str" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-str-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>STR %</td>
+								<td>
+									<a id="total-str%" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-str%-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>DEX</td>
+								<td>
+									<a id="total-dex" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-dex-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>DEX %</td>
+								<td>
+									<a id="total-dex%" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-dex%-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>All %</td>
+								<td>
+									<a id="total-all" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-all-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Crit Dmg</td>
+								<td>
+									<a id="total-crit" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-crit-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Boss</td>
+								<td>
+									<a id="total-boss" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-boss-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>IED</td>
+								<td>
+									<a id="total-ied" class="tooltip-trigger inactive-tooltip-trigger" href="javascript:void(0)">
+										0
+										<div id="total-ied-tooltip"></div>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col">
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+		<script>
+			// Enable equipment-tooltip triggers
+			var tooltips = document.querySelectorAll(".tooltip-trigger div");
+			window.onmousemove = function(e) {
+				var x = (e.clientX + 20) + 'px';
+				var y = (e.clientY + 20) + 'px';
+			    for (var i = 0; i < tooltips.length; i++) {
+			        tooltips[i].style.top = y;
+			        tooltips[i].style.left = x;
+		    	}
+			}
+		</script>
+	</body>
+</html>

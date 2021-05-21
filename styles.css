@@ -1,0 +1,72 @@
+.right-padding {
+	padding-right: 10px;
+}
+
+.error-text {
+	margin: auto;
+	padding: 0px 10px;
+	color: red;
+	font-weight: bold;
+}
+
+.scrollable {
+	height: auto;
+	max-height: 200px;
+	overflow-x: hidden;
+}
+
+.autocomplete {
+	position: relative;
+	display: inline-block;
+}
+
+.autocomplete-items {
+	position: absolute;
+	background-color: #ffffff;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+	border-top: none;
+	z-index: 100;
+	/*position the autocomplete items to be the same width as the container:*/
+	top: 100%;
+	left: 0;
+	right: 0;
+}
+
+/*---------------------------*
+ *      TOOLTIP CLASSES      *
+ *---------------------------*/
+
+.inactive-tooltip-trigger {
+	color: black;
+	text-decoration: none;
+}
+
+.inactive-tooltip-trigger:hover {
+	color: black;
+	text-decoration: none;
+	cursor: default;
+}
+
+.tooltip-trigger {
+	text-decoration: none;
+}
+
+.tooltip-trigger .tooltip-container {
+	display: none;
+}
+
+
+.tooltip-trigger:hover .tooltip-container {
+	display: block;
+	position: fixed;
+	z-index: 100;
+}
+
+.tooltip-container {
+	border: 1px solid black;
+	padding: 10px;
+	background-color: #ffffff;
+	color: black;
+	text-align: left;
+}
