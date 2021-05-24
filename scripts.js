@@ -761,6 +761,10 @@ function printStars(num) {
 	return starString;
 }
 
+function togglePotential() {
+	document.getElementById("equipment-select-potential-menu").classList.toggle("invisible");
+}
+
 // Returns the POTENTIAL_SET according to type and equip level,
 // where [0] is first line, and [1] is second/third line
 // If nothing equipped, return empty array

@@ -230,27 +230,21 @@
 					</ul>
 				</div>
 				<input id="equipment-select-stars" class="invisible" type="text" placeholder="Stars" oninput="setEquipmentStars('weapon', this.value)">
-				<div id="equipment-select-potential" class="dropdown invisible">
-					<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+				<div id="equipment-select-potential" class="invisible">
+					<a class="btn btn-outline-secondary" href="javascript:void(0)" onclick="togglePotential()" role="button">
 						Potential
-					</button>
-					<ul class="dropdown-menu">
+					</a>
+					<div id="equipment-select-potential-menu" class="invisible" style="position: fixed">
 						<div class="autocomplete">
-							<li>
-								<input id="equipment-select-potential-first" type="text" placeholder="First Line">
-							</li>
+							<input id="equipment-select-potential-first" type="text" placeholder="First Line">
 						</div>
 						<div class="autocomplete">
-							<li>
-								<input id="equipment-select-potential-second" type="text" placeholder="Second Line">
-							</li>
+							<input id="equipment-select-potential-second" type="text" placeholder="Second Line">
 						</div>
 						<div class="autocomplete">
-							<li>
-								<input id="equipment-select-potential-third" type="text" placeholder="Third Line">
-							</li>
+							<input id="equipment-select-potential-third" type="text" placeholder="Third Line">
 						</div>
-					</ul>
+					</div>
 				</div>
 				<div id="equipment-select-error" class="error-text invisible">
 					Error!
