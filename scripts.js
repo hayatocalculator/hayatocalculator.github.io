@@ -649,14 +649,7 @@ function autocomplete(type, input, array) {
 				// When clicked, set the potential to clicked value and close list
 				listItem.addEventListener("click", function(e) {
 					input.value = this.innerHTML;
-					// Grab the id of the potential line input element, should contain "first"/"second"/"third"
-					let potentialInputId = this.parentElement.parentElement.childNodes[1].id;
-					if (potentialInputId.indexOf("first") >= 0)
-						EQUIP_INFO[type].potential[0] = this.innerHTML;
-					else if (potentialInputId.indexOf("second") >= 0)
-						EQUIP_INFO[type].potential[1] = this.innerHTML;
-					else
-						EQUIP_INFO[type].potential[2] = this.innerHTML;
+					setEquipmentPotential(type, this.parentElement.parentElement.childNodes[1].id, this.innerHTML);
 					closeAllLists();
 				});
 				listContainer.appendChild(listItem);
@@ -761,6 +754,18 @@ function printStars(num) {
 	return starString;
 }
 
+function setEquipmentPotential(type, potentialInputId, potential) {
+	// Id of the potential line input element, should contain "first"/"second"/"third"
+	if (potentialInputId.indexOf("first") >= 0)
+		EQUIP_INFO[type].potential[0] = potential;
+	else if (potentialInputId.indexOf("second") >= 0)
+		EQUIP_INFO[type].potential[1] = potential;
+	else
+		EQUIP_INFO[type].potential[2] = potential;
+
+	updateEquipDisplay(type);
+}
+
 function togglePotential() {
 	document.getElementById("equipment-select-potential-menu").classList.toggle("invisible");
 }
@@ -796,23 +801,28 @@ function getPotentialSet(type) {
 function updateEquipDisplay(type) {
 	let equipCurrStats = EQUIP_INFO[type]
 
+	// Stars and name
 	let tooltipText = "";
 	if (equipCurrStats.numStars > 0)
 		tooltipText += "<span style='width: 100%; text-align: center; display: inline-block;'>" + printStars(equipCurrStats.numStars) + "</span><br>";
 	tooltipText += "<span style='font-weight: bold'>" + equipCurrStats.name + "</span><br>";
 
-	// Object.keys(STATS).forEach(currStat => {
-	// 	let currVal = equipCurrStats.baseStats[STATS[currStat]]
-	// 	if (currVal > 0)
-	// 		tooltipText += currStat + ": " + currVal + "<br>";
-	// })
-
+	// Stats section
 	for (let i = 0; i < STATS.length; i++) {
 		tooltipText += STATS[i] + ": " + equipCurrStats.baseStats[i];
 		if (equipCurrStats.starforceStats !== null && equipCurrStats.starforceStats[i] != 0) {
 			tooltipText += " <span style='color: green'>+" + equipCurrStats.starforceStats[i] + "</span>";
 		}
+		// TODO -- Add flames
 		tooltipText += "<br>";
+	}
+
+	// Potential section
+	if (equipCurrStats.potential[0] || equipCurrStats.potential[1] || equipCurrStats.potential[2]) {
+		tooltipText += "<hr>";
+		tooltipText += (equipCurrStats.potential[0]) ? equipCurrStats.potential[0] + "<br>" : "";
+		tooltipText += (equipCurrStats.potential[1]) ? equipCurrStats.potential[1] + "<br>" : "";
+		tooltipText += (equipCurrStats.potential[2]) ? equipCurrStats.potential[2] + "<br>" : "";
 	}
 
 	activateTooltip("equipment-" + type, tooltipText);
