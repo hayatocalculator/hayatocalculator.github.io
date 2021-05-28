@@ -422,117 +422,6 @@ const BASE_STATS = {
 	*/
 }
 
-// Static data for starforce stats of every item
-// <=15 stars does not depend on equip level and only gloves have different stats
-// >15 stars does depend on equip level, both gloves and weapon have different stats
-// [STR, DEX, INT, LUK, Attack, Damage, Boss, IED]
-const STARFORCE_STATS = [
-	{ // 0 Stars
-		"gloves": [0, 0, 0, 0, 0, 0, 0, 0],
-		"other": [0, 0, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 1 Star
-		"gloves": [2, 2, 0, 0, 0, 0, 0, 0],
-		"other": [2, 2, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 2 Stars
-		"gloves": [4, 4, 0, 0, 0, 0, 0, 0],
-		"other": [4, 4, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 3 Stars
-		"gloves": [6, 6, 0, 0, 0, 0, 0, 0],
-		"other": [6, 6, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 4 Stars
-		"gloves": [8, 8, 0, 0, 0, 0, 0, 0],
-		"other": [8, 8, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 5 Stars
-		"gloves": [10, 10, 0, 0, 1, 0, 0, 0],
-		"other": [10, 10, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 6 Stars
-		"gloves": [13, 13, 0, 0, 1, 0, 0, 0],
-		"other": [13, 13, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 7 Stars
-		"gloves": [16, 16, 0, 0, 2, 0, 0, 0],
-		"other": [16, 16, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 8 Stars
-		"gloves": [19, 19, 0, 0, 2, 0, 0, 0],
-		"other": [19, 19, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 9 Stars
-		"gloves": [22, 22, 0, 0, 3, 0, 0, 0],
-		"other": [22, 22, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 10 Stars
-		"gloves": [25, 25, 0, 0, 3, 0, 0, 0],
-		"other": [25, 25, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 11 Stars
-		"gloves": [28, 28, 0, 0, 4, 0, 0, 0],
-		"other": [28, 28, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 12 Stars
-		"gloves": [31, 31, 0, 0, 4, 0, 0, 0],
-		"other": [31, 31, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 13 Stars
-		"gloves": [34, 34, 0, 0, 5, 0, 0, 0],
-		"other": [34, 34, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 14 Stars
-		"gloves": [37, 37, 0, 0, 6, 0, 0, 0],
-		"other": [37, 37, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 15 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 16 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 17 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 18 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 19 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 20 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 21 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 22 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 23 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 24 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	},
-	{ // 25 Stars
-		"gloves": [40, 40, 0, 0, 7, 0, 0, 0],
-		"other": [40, 40, 0, 0, 0, 0, 0, 0]
-	}
-]
-
 // Static data for potential sets for items
 // 2D array where first dimension is based on type/level, e.g. >150 Gloves and second dimension is first line only then second/third lines
 const POTENTIAL_SETS = [
@@ -716,6 +605,113 @@ function isValidStar(type, stars) {
 		return false;
 }
 
+// Calculates the stats gained from stars
+function getStarforceStats(type, level, stars) {
+	// [STR, DEX, INT, LUK, Attack, Damage, Boss, IED]
+	let stats = [0, 0, 0, 0, 0, 0, 0, 0];
+
+	let weapon_gain = [
+		[6, 7, 8, 9, 13], // 16*
+		[7, 8, 9, 9, 13], // 17*
+		[7, 8, 9, 10, 14], // 18*
+		[8, 9, 10, 11, 14], // 19*
+		[9, 10, 11, 12, 15], // 20*
+		[0, 11, 12, 13, 16], // 21*
+		[0, 12, 13, 14, 17], // 22*
+		[0, 30, 31, 32, 34], // 23*
+		[0, 31, 32, 33, 35], // 24*
+		[0, 32, 33, 34, 36] // 25*
+	];
+
+	let other_gain = [
+		[7, 8, 9, 10, 12], // 16*
+		[8, 9, 10, 11, 13], // 17*
+		[9, 10, 11, 12, 14], // 18*
+		[10, 11, 12, 13, 15], // 19*
+		[11, 12, 13, 14, 16], // 20*
+		[0, 13, 14, 15, 17], // 21*
+		[0, 15, 16, 17, 19], // 22*
+		[0, 17, 18, 19 ,21], // 23*
+		[0, 19, 20, 21, 23], // 24*
+		[0, 21, 22, 23, 25] // 25*
+	];
+
+	for (let star = 1; star <= stars; star++) {
+		if (star <= 5) {
+			stats[0] += 2;
+			stats[1] += 2;
+
+			// Weapon visible att gain is current attack * 0.02 + 1, rounded down
+			if (type === 'weapon')
+				stats[4] += Math.floor((EQUIP_INFO.weapon.baseStats[4] + stats[4]) * 0.02 + 1);
+			// Gloves visible att gain of 1 at odd numbers in range 5-15
+			else if (type === 'gloves' && (star == 5))
+				stats[4] += 1
+		}
+		else if (star <= 15) {
+			stats[0] += 3;
+			stats[1] += 3;
+
+			// Weapon visible att gain is current attack * 0.02 + 1, rounded down
+			if (type === 'weapon')
+				stats[4] += Math.floor((EQUIP_INFO.weapon.baseStats[4] + stats[4]) * 0.02 + 1);
+			// Gloves visible att gain at odd numbers in range 5-15
+			else if (type === 'gloves' && (star % 2))
+				stats[4] += 1;
+		}
+
+		else { // 16* - 25*
+			if (level <= 137) { // 128 ~ 137
+				stats[0] += 7;
+				stats[1] += 7;
+
+				if (type === 'weapon')
+					stats[4] += weapon_gain[star-16][0];
+				else
+					stats[4] += other_gain[star-16][0];
+			}
+			else if (level <= 149) { // 138 ~ 149
+				stats[0] += 9;
+				stats[1] += 9;
+
+				if (type === 'weapon')
+					stats[4] += weapon_gain[star-16][1];
+				else
+					stats[4] += other_gain[star-16][1];
+			}
+			else if (level <= 159) { // 150 ~ 159
+				stats[0] += 11;
+				stats[1] += 11;
+
+				if (type === 'weapon')
+					stats[4] += weapon_gain[star-16][2];
+				else
+					stats[4] += other_gain[star-16][2];
+			}
+			else if (level <= 199) { // 160 ~ 199
+				stats[0] += 13;
+				stats[1] += 13;
+
+				if (type === 'weapon')
+					stats[4] += weapon_gain[star-16][3];
+				else
+					stats[4] += other_gain[star-16][3];
+			}
+			else { // 200+
+				stats[0] += 15;
+				stats[1] += 15;
+
+				if (type === 'weapon')
+					stats[4] += weapon_gain[star-16][4];
+				else
+					stats[4] += other_gain[star-16][4];
+			}
+		}
+	}
+
+	return stats;
+}
+
 function setEquipmentStars(type, stars) {
 	let parsedStars = +stars;
 	if (Number.isInteger(parsedStars) && isValidStar(type, parsedStars)) {
@@ -723,7 +719,7 @@ function setEquipmentStars(type, stars) {
 
 		let starforceType = (type === 'gloves' ? 'gloves' : 'other');
 		EQUIP_INFO[type].numStars = parsedStars
-		EQUIP_INFO[type].starforceStats = STARFORCE_STATS[parsedStars][starforceType];
+		EQUIP_INFO[type].starforceStats = getStarforceStats(type, EQUIP_INFO[type].level, parsedStars);
 		updateEquipDisplay(type);
 		//updateTotalStats();
 	}
@@ -736,17 +732,17 @@ function setEquipmentStars(type, stars) {
 
 function printStars(num) {
 	let starString = "";
-	for(let i = 1; i <= 15 && i <= num; i++) {
+	for (let i = 1; i <= 15 && i <= num; i++) {
 		starString += "*";
-		if(i % 5 == 0)
+		if (i % 5 == 0)
 			starString += " ";
 	}
 
 	if (num > 15) {
 		starString += "<br>";
-		for(let i = 16; i <= num; i++) {
+		for (let i = 16; i <= num; i++) {
 			starString += "*";
-			if(i % 5 == 0)
+			if (i % 5 == 0)
 				starString += " ";
 		}
 	}
@@ -811,7 +807,7 @@ function updateEquipDisplay(type) {
 	for (let i = 0; i < STATS.length; i++) {
 		tooltipText += STATS[i] + ": " + equipCurrStats.baseStats[i];
 		if (equipCurrStats.starforceStats !== null && equipCurrStats.starforceStats[i] != 0) {
-			tooltipText += " <span style='color: green'>+" + equipCurrStats.starforceStats[i] + "</span>";
+			tooltipText += " <span style='color: blue'>+" + equipCurrStats.starforceStats[i] + "</span>";
 		}
 		// TODO -- Add flames
 		tooltipText += "<br>";
